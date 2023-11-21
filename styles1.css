@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: flex;
+    
+  }
+  
+  .navbar a {
+    
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+  }
+  
+  .dropdown {
+    
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #7CFC00;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.team {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap;
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    min-height: 100vh; /* Set a minimum height to cover the viewport */
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    opacity: 0; /* Initially set opacity to 0 for the fade-in effect */
+    flex: 0 0 30%; /* Adjust as needed for the desired width */
+    position: relative;
+}
+
+.team-member img {
+    width: 150px; /* Set a fixed width for the images */
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member-info {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 90px;
+}
+
+.team-member h2,
+.team-member p {
+    margin: 5px 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animation to team members */
+#team-member1 {
+    animation: fadeIn 1s ease-out 0.5s forwards; /* Delay the animation for the first team member */
+}
+
+#team-member2 {
+    animation: fadeIn 1s ease-out 1s forwards; /* Delay the animation for the second team member */
+}
+
+#team-member3 {
+    animation: fadeIn 1s ease-out 1.5s forwards; /* Delay the animation for the third team member */
+}
+
+#team-member4 {
+    animation: fadeIn 1s ease-out 2s forwards; /* Delay the animation for the fourth team member */
+}
+
+#team-member5 {
+    animation: fadeIn 1s ease-out 2.5s forwards; /* Delay the animation for the fifth team member */
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .team{
+        display: flex;
+        align-content: center;
+    }
+    .team-member {
+       display: flex;
+       align-content: center; 
+    }
+    .member-info{
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+  }

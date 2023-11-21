@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: flex;
+    
+  }
+  
+  .navbar a {
+    
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+  }
+  
+  .dropdown {
+    
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #7CFC00;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .gantt_chart{
+    display: flex;
+    justify-content: center;
+  }
+
+  table, td, th {
+    border: 1px solid black;
+  }
+  .gantt_chart_topic{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .gantt{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    
+  }
+  
+  th {
+    height: 70px;
+  }
+
+ .empty{
+  padding: 30px;
+ }
+
+ .empty1{
+  background-color: #cce7c9;;
+ }
+
+ .empty2{
+  background-color: #acd8a7;
+ }
+
+ .empty3{
+  background-color: #8bca84;
+ }
+
+ .empty4{
+  background-color: #72bf6a;
+ }
+
+ .empty5{
+  background-color: #5bb450;
+ }
+
+ .empty6{
+  background-color: #52a447;
+ }
+
+ .empty7{
+  background-color: #46923c;
+ }
+
+ .empty8{
+  background-color: #3b8132;
+ }
+
+ .contribution{
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  
+ }
+ .contribution_table{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+ }
+
